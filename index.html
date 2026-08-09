@@ -181,6 +181,31 @@
             font-size: 1.125rem;
         }
 
+        /* About */
+        #about {
+            padding-top: var(--spacing-lg);
+        }
+
+        #about .section-title {
+            margin-bottom: var(--spacing-md);
+        }
+
+        .about-content {
+            max-width: 700px;
+            margin: 0 auto var(--spacing-lg);
+            color: var(--color-grey);
+            font-size: 1.05rem;
+            text-align: left;
+        }
+
+        .about-content p {
+            margin-bottom: var(--spacing-md);
+        }
+
+        .about-cta {
+            text-align: center;
+        }
+
         /* Products */
         .products-grid {
             display: grid;
@@ -267,6 +292,7 @@
         <div class="container header-content">
             <a href="#" class="logo">Tom Åsvold</a>
             <nav class="nav">
+                <a href="#about">About</a>
                 <a href="#products">Products</a>
                 <a href="#contact" class="btn btn-outline">Get in touch</a>
             </nav>
@@ -279,11 +305,42 @@
                 <span class="tagline">Independent Consulting</span>
                 <h1>Tom <span class="text-accent">Åsvold</span></h1>
                 <p class="description">
-                    I help businesses make sense of their payroll, HR, and data
+                    I help businesses bridge the gaps in their workforce and payroll
                     systems &mdash; and build software for musicians on the side.
                     Available for consulting engagements of all sizes.
                 </p>
                 <a href="#contact" class="btn btn-primary">Let's talk</a>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About</h2>
+                <div class="about-content">
+                    <p>
+                        With over 10 years of experience in Workforce Management
+                        Systems (employee scheduling), I've seen every kind of
+                        product gap and limitation &mdash; especially around payroll
+                        and reporting, POS integrations, formatting issues,
+                        compability issues, and the challenge of managing data
+                        entries in volume.
+                    </p>
+                    <p>
+                        Through custom-built applications and workflows, I help
+                        businesses bridge the functionality gaps in their systems.
+                    </p>
+                    <p>
+                        I also build software for musicians, where I try to make
+                        life easier for recording and performing drummers.
+                    </p>
+                    <p>
+                        Think I could help? Let me know &mdash; I'm available for
+                        consulting work and would love to solve your challenges.
+                    </p>
+                </div>
+                <div class="about-cta">
+                    <a href="#contact" class="btn btn-primary">Let's talk</a>
+                </div>
             </div>
         </section>
 
