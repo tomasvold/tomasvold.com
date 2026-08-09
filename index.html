@@ -7,6 +7,17 @@
     <!-- TODO: remove before launch -->
     <meta name="robots" content="noindex, nofollow">
     <title>Tom Åsvold</title>
+    <script>
+      const passphrase = "Takeovers#2026.";
+      if (sessionStorage.getItem("auth") !== "true") {
+        const userPass = prompt("Enter password to view site:");
+        if (userPass === passphrase) {
+          sessionStorage.setItem("auth", "true");
+        } else {
+          document.documentElement.innerHTML = "<body style='background:#111;color:#fff;display:flex;justify-content:center;align-items:center;height:100vh;'><h1>Access Denied</h1></body>";
+        }
+      }
+    </script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -181,6 +192,14 @@
             font-size: 1.125rem;
         }
 
+        .hero .description p {
+            margin-bottom: var(--spacing-md);
+        }
+
+        .hero .description p:last-child {
+            margin-bottom: 0;
+        }
+
         /* Products */
         .products-grid {
             display: grid;
@@ -278,11 +297,11 @@
             <div class="container">
                 <span class="tagline">Independent Consulting</span>
                 <h1>Tom <span class="text-accent">Åsvold</span></h1>
-                <p class="description">
-                    I help people design, build, and ship software &mdash; from early product
-                    strategy through hands-on engineering. Available for consulting
-                    engagements of all sizes.
-                </p>
+                <div class="description">
+                    <p>Through custom-built applications and workflows, I help businesses bridge the functionality gaps in their systems.</p>
+                    <p>I also build software for musicians, where I try to make life easier for recording and performing drummers.</p>
+                    <p>Think I could help? Let me know &mdash; I'm available for consulting work and would love to solve your challenges.</p>
+                </div>
                 <a href="#contact" class="btn btn-primary">Let's talk</a>
             </div>
         </section>
