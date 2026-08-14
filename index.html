@@ -24,6 +24,7 @@
             --color-white: #ffffff;
             --color-light-grey: #f4f4f5;
             --color-grey: #71717a;
+            --color-body: #3f3f46;
             --color-dark: #18181b;
             --color-accent: #f97316;
             --color-accent-hover: #ea580c;
@@ -167,7 +168,7 @@
 
         /* Hero */
         .hero {
-            padding: calc(var(--spacing-xl) * 2.5) 0 var(--spacing-xl);
+            padding: calc(var(--spacing-xl) * 2.5) 0 var(--spacing-lg);
             text-align: center;
         }
 
@@ -186,9 +187,9 @@
         }
 
         .hero .description {
-            max-width: 620px;
+            max-width: 540px;
             margin: 0 auto var(--spacing-lg);
-            color: var(--color-grey);
+            color: var(--color-body);
             font-size: 1.125rem;
         }
 
@@ -198,6 +199,26 @@
 
         .hero .description p:last-child {
             margin-bottom: 0;
+        }
+
+        /* Services */
+        #services {
+            padding-top: var(--spacing-lg);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: var(--spacing-lg);
+        }
+
+        .service-block h3 {
+            font-size: 1.25rem;
+        }
+
+        .service-block p {
+            color: var(--color-body);
+            font-size: 1.05rem;
         }
 
         /* Products */
@@ -227,6 +248,12 @@
             margin-bottom: var(--spacing-md);
         }
 
+        .product-card p {
+            color: var(--color-body);
+            font-size: 0.95rem;
+            margin-bottom: var(--spacing-md);
+        }
+
         .badge-soon {
             display: inline-block;
             padding: 0.4rem 1rem;
@@ -249,7 +276,7 @@
         }
 
         .contact-center > p {
-            color: var(--color-grey);
+            color: var(--color-body);
             margin-bottom: var(--spacing-lg);
             font-size: 1.125rem;
         }
@@ -298,11 +325,28 @@
                 <span class="tagline">Independent Consulting</span>
                 <h1>Tom <span class="text-accent">Åsvold</span></h1>
                 <div class="description">
-                    <p>Through custom-built applications and workflows, I help businesses bridge the functionality gaps in their systems.</p>
-                    <p>I also build software for musicians, where I try to make life easier for recording and performing drummers.</p>
-                    <p>Think I could help? Let me know &mdash; I'm available for consulting work and would love to solve your challenges.</p>
+                    <p>I help enterprise SaaS companies and their clients eliminate operational bottlenecks through custom automation, API integrations, and Nordic payroll expertise.</p>
+                    <p>Whether you need to bridge disjointed software systems, automate manual data entry, or navigate complex Scandinavian labor laws, I build the exact technical solutions that out-of-the-box software can't provide.</p>
+                    <p>(I also build custom audio software to make life easier for recording and performing drummers).</p>
+                    <p>Struggling with a messy integration or data migration? Let's talk.</p>
                 </div>
                 <a href="#contact" class="btn btn-primary">Let's talk</a>
+            </div>
+        </section>
+
+        <section id="services" class="section">
+            <div class="container">
+                <h2 class="section-title">Services</h2>
+                <div class="services-grid">
+                    <div class="service-block">
+                        <h3>Workflow Automation &amp; API Integrations</h3>
+                        <p>Drowning in manual data entry? I engineer custom API bridges, webhook automations, and file converters to connect your isolated systems. From transforming raw Excel/CSV data into precise XML payroll imports, to automating bulk updates across thousands of users, I build the connective tissue that saves your team hundreds of hours a month.</p>
+                    </div>
+                    <div class="service-block">
+                        <h3>Nordic HR &amp; Payroll Localization</h3>
+                        <p>Breaking into the Scandinavian market requires specialized knowledge. I help international software platforms navigate complex union laws (Kollektivavtal) and regional payroll requirements. I translate these local compliance needs into actionable technical specifications, ensuring your platform integrates flawlessly with major Nordic systems like Visma, Hogia, and Fortnox.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -321,6 +365,11 @@
                     <div class="product-card">
                         <h3>Tom's Unit Converter</h3>
                         <a class="btn btn-primary btn-sm" href="https://play.google.com/store/apps/details?id=com.tomasvold.tomsunitconverter&pcampaignid=web_share" target="_blank" rel="noopener">Get it on Google Play</a>
+                    </div>
+                    <div class="product-card">
+                        <h3>Payroll File Converter</h3>
+                        <p>Converts Excel &amp; CSV data into Visma L&ouml;n 600, Hogia L&ouml;n Plus, PAXml, and other Nordic payroll import formats.</p>
+                        <span class="badge-soon">Coming Soon</span>
                     </div>
                 </div>
             </div>
