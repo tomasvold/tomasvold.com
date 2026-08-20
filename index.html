@@ -8,15 +8,15 @@
     <meta name="robots" content="noindex, nofollow">
     <title>Tom Åsvold</title>
     <script>
-      const passphrase = "Takeovers#2026.";
-      if (sessionStorage.getItem("auth") !== "true") {
-        const userPass = prompt("Enter password to view site:");
-        if (userPass === passphrase) {
-          sessionStorage.setItem("auth", "true");
-        } else {
-          document.documentElement.innerHTML = "<body style='background:#111;color:#fff;display:flex;justify-content:center;align-items:center;height:100vh;'><h1>Access Denied</h1></body>";
+        const passphrase = "Takeovers#2026.";
+        if (sessionStorage.getItem("auth") !== "true") {
+            const userPass = prompt("Enter password to view site:");
+            if (userPass === passphrase) {
+                sessionStorage.setItem("auth", "true");
+            } else {
+                document.documentElement.innerHTML = "<body style='background:#111;color:#fff;display:flex;justify-content:center;align-items:center;height:100vh;'><h1>Access Denied</h1></body>";
+            }
         }
-      }
     </script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -38,13 +38,6 @@
             <div class="container">
                 <span class="tagline">Independent Consulting</span>
                 <h1>Tom <span class="text-accent">Åsvold</span></h1>
-                <div class="description">
-                    <p>I help SaaS companies and their clients eliminate operational bottlenecks through custom automation, API integrations, and Nordic payroll expertise.</p>
-                    <p>Whether you need to bridge disjointed software systems, change payroll systems, or automate manual data entry, I build the exact technical solutions that out-of-the-box software can't provide.</p>
-                    <p>(I also build custom audio software to make life easier for recording and performing drummers).</p>
-                    <p>Struggling with a messy integration or data migration? Let's talk.</p>
-                </div>
-                <a href="#contact" class="btn btn-primary">Let's talk</a>
             </div>
         </section>
 
@@ -54,11 +47,26 @@
                 <div class="services-grid">
                     <div class="service-block">
                         <h3>Workflow Automation &amp; API Integrations</h3>
-                        <p>Drowning in manual data entry? I engineer custom API bridges, webhook automations, and file converters to connect your isolated systems. From transforming raw Excel/CSV data into precise XML payroll imports, to automating bulk updates across thousands of users, I build the connective tissue that saves your team hundreds of hours a month.</p>
+                        <p>I help SaaS companies and their clients eliminate operational bottlenecks through custom
+                            automation, API integrations, and Nordic payroll expertise.
+                            Whether you need to bridge disjointed software systems, change payroll systems, or automate
+                            manual data entry, I build the exact technical solutions that out-of-the-box software can't
+                            provide.
+                            Do you have a challenge that needs a custom technical solution?</p>
                     </div>
                     <div class="service-block">
                         <h3>Nordic HR &amp; Payroll Localization</h3>
-                        <p>Breaking into the Scandinavian market requires specialized knowledge. I help international software platforms navigate complex union laws (Kollektivavtal) and regional payroll requirements. I translate these local compliance needs into actionable technical specifications, ensuring your platform integrates flawlessly with major Nordic systems like Visma, Hogia, and Fortnox.</p>
+                        <p>Breaking into the Scandinavian market requires specialized knowledge. I help international
+                            software platforms navigate complex union laws (Kollektivavtal) and regional payroll
+                            requirements. I translate these local compliance needs into actionable technical
+                            specifications, ensuring your platform integrates flawlessly with major Nordic systems like
+                            Visma, Hogia, and Fortnox.</p>
+                    </div>
+                    <div class="service-block">
+                        <h3>Music &amp; Audio Software</h3>
+                        <p>I build practical tools for recording and performing musicians, from ultra portable
+                            backingtrack systems to browser-based mixing tools that isolates and mixes drum stems
+                            directly in the browser, no installs required.</p>
                     </div>
                 </div>
             </div>
@@ -69,20 +77,24 @@
                 <h2 class="section-title">Products</h2>
                 <div class="products-grid">
                     <div class="product-card">
-                        <h3>ISOMIX</h3>
-                        <span class="badge-soon">Coming Soon</span>
+                        <h3>ISOMIX - Isolate and mix drums stems directly in the browser</h3>
+                        <a class="btn btn-primary btn-sm" href="https://drum-splitter-app.onrender.com/
+">Read more</a>
                     </div>
                     <div class="product-card">
-                        <h3>Husku-X</h3>
+                        <h3>Husku-X Backingtrack System</h3>
                         <a class="btn btn-primary btn-sm" href="/products/husku-x/index.html">Read more</a>
                     </div>
                     <div class="product-card">
                         <h3>Tom's Unit Converter</h3>
-                        <a class="btn btn-primary btn-sm" href="https://play.google.com/store/apps/details?id=com.tomasvold.tomsunitconverter&pcampaignid=web_share" target="_blank" rel="noopener">Get it on Google Play</a>
+                        <a class="btn btn-primary btn-sm"
+                            href="https://play.google.com/store/apps/details?id=com.tomasvold.tomsunitconverter&pcampaignid=web_share"
+                            target="_blank" rel="noopener">Get it on Google Play</a>
                     </div>
                     <div class="product-card">
                         <h3>Payroll File Converter</h3>
-                        <p>Converts Excel &amp; CSV data into Visma L&ouml;n 600, Hogia L&ouml;n Plus, PAXml, and other Nordic payroll import formats.</p>
+                        <p>Converts Excel &amp; CSV data into Visma L&ouml;n 600, Hogia L&ouml;n Plus, PAXml, and other
+                            Nordic payroll import formats.</p>
                         <span class="badge-soon">Coming Soon</span>
                     </div>
                 </div>

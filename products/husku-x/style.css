@@ -61,6 +61,12 @@ a {
     width: auto;
 }
 
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
 .nav-link {
     color: var(--text-muted);
     text-decoration: none;
