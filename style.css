@@ -233,7 +233,9 @@ a {
 }
 
 .badge-soon {
-    display: inline-block;
+    display: block;
+    width: max-content;
+    margin: 0 auto var(--spacing-md);
     padding: 0.4rem 1rem;
     border-radius: 999px;
     background-color: var(--color-light-grey);
