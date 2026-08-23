@@ -336,6 +336,10 @@ a {
     margin: 0 0 28px;
 }
 
+.cta-strip .hero-actions {
+    justify-content: center;
+}
+
 /* --- Footer --- */
 footer {
     border-top: 1px solid var(--card-border);
