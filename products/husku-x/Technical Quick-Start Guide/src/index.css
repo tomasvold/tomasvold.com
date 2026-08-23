@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Mono:wght@400;700&display=swap');
+
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --stroke: 2px solid #000000;
+}
+
+body {
+  margin: 0;
+  background-color: #e5e5e5;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  color: var(--black);
+  font-family: 'Inter', sans-serif;
+}
+
+/* A4 Print Layout */
+.a4-page {
+  width: 210mm;
+  height: 297mm;
+  background-color: var(--white);
+  box-sizing: border-box;
+  padding: 12mm;
+  display: flex;
+  flex-direction: column;
+  gap: 8mm;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.mono {
+  font-family: 'Space Mono', monospace;
+  text-transform: uppercase;
+}
+
+/* Wireframe Hardware Boxes */
+.hw-box {
+  border: var(--stroke);
+  border-radius: 6px;
+  padding: 1rem;
+  background: var(--white);
+  position: relative;
+}
+
+.hw-port {
+  border: 1px solid var(--black);
+  height: 12px;
+  width: 24px;
+  border-radius: 2px;
+  display: inline-block;
+  background: var(--black);
+}
+
+.signal-line {
+  flex-grow: 1;
+  border-bottom: 2px solid var(--black);
+  position: relative;
+  margin: 0 1rem;
+}
+
+.signal-line::after {
+  content: '';
+  position: absolute;
+  right: -2px;
+  top: -3px;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-left: 6px solid var(--black);
+}
+
+.dashed {
+  border-bottom-style: dashed;
+}
+
+@media print {
+  body { background: none; padding: 0; }
+  .a4-page { box-shadow: none; width: 100%; height: 100%; }
+}

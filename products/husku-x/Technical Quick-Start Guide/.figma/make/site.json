@@ -1,0 +1,10 @@
+{
+  "description": "Access a minimalist, single-page quick-start guide and hardware manual for the HUSKU-X audio product, designed for clarity and ease of use.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
