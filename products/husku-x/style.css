@@ -222,6 +222,9 @@ a {
 }
 
 .feature-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
     background: var(--card-bg);
     border: 1px solid var(--card-border);
     border-radius: 14px;
@@ -229,9 +232,9 @@ a {
 }
 
 .feature-card .icon {
-    font-size: 1.8rem;
-    display: block;
-    margin-bottom: 14px;
+    flex-shrink: 0;
+    font-size: 1.5rem;
+    line-height: 1;
 }
 
 .feature-card h3 {
@@ -337,6 +340,19 @@ a {
     border-top: 1px solid var(--card-border);
 }
 
+.cta-strip .version-badge {
+    display: inline-block;
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border: 1px solid var(--card-border);
+    border-radius: 999px;
+    padding: 6px 16px;
+    margin-bottom: 18px;
+}
+
 .cta-strip h2 {
     font-size: clamp(1.6rem, 3vw, 2.2rem);
     margin: 0 0 12px;
@@ -345,6 +361,24 @@ a {
 .cta-strip p {
     color: var(--text-muted);
     margin: 0 0 28px;
+}
+
+.cta-strip .release-notes {
+    list-style: none;
+    margin: 0 0 32px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+.cta-strip .release-notes li::before {
+    content: "\2713";
+    color: var(--accent);
+    margin-right: 8px;
 }
 
 .cta-strip .hero-actions {
